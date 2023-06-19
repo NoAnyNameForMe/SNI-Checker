@@ -21,7 +21,7 @@
 
 	pip install ping3
  	pip install prettytable
-  	pip instll tqdm
+  	pip install tqdm
 
 <br />
 
