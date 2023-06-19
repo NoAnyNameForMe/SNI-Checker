@@ -46,7 +46,6 @@
 
 ![Final](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/8ebe2aaf-a16f-41fc-bbab-d619e05e5996)
 
-ورژن 1.1
-بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه
+[ورژن 1.1](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/python)
 
-https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/python
+بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه
