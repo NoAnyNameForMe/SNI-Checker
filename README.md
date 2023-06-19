@@ -1,3 +1,8 @@
+[ورژن 1.1](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/python)
+
+بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه
+
+
 با تشکر از تمام دوستانی که زحمت کشیدند برای اینترنت آزاد.
 
 ممنون از سگارو، وحید و IRCF
@@ -27,6 +32,12 @@
 
 ![Domains](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/65fd6fcf-5ad2-4968-be78-26a7e277a8d2)
 
+پشنیازهایی قبل از اجرای کد که باید نصب کنید.
+
+	pip install ping3
+ 	pip install prettytable
+  	pip instll tqdm
+
 
 بعد کد رو ران کنید، از شما مسیر فایل txt میپرسه که کامل وارد کنید. به عنوان مثال
 
@@ -45,7 +56,3 @@
 و تیبل دومی هم فقط اونایی که بهشون پینگ داشتید.
 
 ![Final](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/8ebe2aaf-a16f-41fc-bbab-d619e05e5996)
-
-[ورژن 1.1](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/python)
-
-بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه
