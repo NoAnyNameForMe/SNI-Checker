@@ -7,16 +7,16 @@
 کافیه از داخل سایت bgp.tools، لیست مورد نظرتون رو به صورت یک جا کپی کنید، به عنوان مثال
 
 	A	DNS
-37.59.0.8	www.dylemo.pl, dylemo.pl
-37.59.0.18	www.kisland.com, kisland.com
-37.59.0.116	stage.mozilla-hispano.org, foroestatico.mozilla-hispano.org ( 5 more...)
-37.59.0.183	shinken.2le.net
+	37.59.0.8	www.dylemo.pl, dylemo.pl
+	37.59.0.18	www.kisland.com, kisland.com
+	37.59.0.116	stage.mozilla-hispano.org, foroestatico.mozilla-hispano.org ( 5 more...)
+	37.59.0.183	shinken.2le.net
 
 وقتی که کلا دیتا رو کپی کردید، داخل یک فایل txt سیو کنید.
 
 بعد کد رو ران کنید، از شما مسیر فایل txt میپرسه که کامل وارد کنید. به عنوان مثال
 
-C:/SNI/domains.txt
+	C:/SNI/domains.txt
 
 بعد خود کد میاد دامنه ها رو جدا میکنه و اضافه هایی که مربوط به دامنه نمیشه رو حذف میکنه و شروع میکنه به پینگ گرفتن از دامنه ها.
 
