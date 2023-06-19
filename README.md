@@ -48,4 +48,5 @@
 
 ورژن 1.1
 بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه
+
 https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/python
