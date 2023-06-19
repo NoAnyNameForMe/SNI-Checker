@@ -14,6 +14,10 @@
 	37.59.0.18	www.kisland.com, kisland.com
 	37.59.0.116	stage.mozilla-hispano.org, foroestatico.mozilla-hispano.org ( 5 more...)
 	37.59.0.183	shinken.2le.net
+ 	.
+	.
+ 	.
+  	.
 
 وقتی که کلا دیتا رو کپی کردید، داخل یک فایل txt سیو کنید.
 
