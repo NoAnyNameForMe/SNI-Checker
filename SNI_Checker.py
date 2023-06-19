@@ -52,6 +52,12 @@ def ping_domains(domains):
     print("\nSuccessful Domains:")
     print(success_domains_table)
 
+    # Save result to a text file
+    with open("ping_result.txt", 'w') as file:
+        file.write(str(table))
+        file.write("\n\nSuccessful Domains:\n")
+        file.write(str(success_domains_table))
+
 # Prompt for file location and run the script
 file_location = input("Enter the file location: ")
 domains = extract_domains(file_location)
