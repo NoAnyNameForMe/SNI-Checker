@@ -1,4 +1,4 @@
-![TLS](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/69729e19-66e6-4601-a8fb-8901736ac0b2)[ورژن 1.2](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V.1.2)
+[ورژن 1.2](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V.1.2)
 
 بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه.
 
