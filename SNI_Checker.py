@@ -1,4 +1,7 @@
+import os
 import re
+import ssl
+import socket 
 from ping3 import ping
 from prettytable import PrettyTable
 from tqdm import tqdm
@@ -20,12 +23,21 @@ def extract_domains(file_path):
 
     return domains
 
+def check_tls_version(domain):
+    try:
+        with ssl.create_default_context().wrap_socket(socket.socket(), server_hostname=domain) as s:
+            s.connect((domain, 443))
+            tls_version = s.version()
+            return tls_version if tls_version else "TLS version not available"
+    except Exception as e:
+        return None
+
 def ping_domains(domains):
     table = PrettyTable()
-    table.field_names = ['Domain', 'Ping Result (ms)']
+    table.field_names = ['Domain', 'Ping Result (ms)', 'TLS Version']
 
     success_domains_table = PrettyTable()
-    success_domains_table.field_names = ['Domain', 'Ping Result (ms)']
+    success_domains_table.field_names = ['Domain', 'Ping Result (ms)', 'TLS Version']
 
     success_domains = set()
     success_count = 0
@@ -36,12 +48,13 @@ def ping_domains(domains):
             ping_result = ping(domain)
             if ping_result is not None:
                 ping_result *= 1000  # Multiply by 1000 if not None
-                table.add_row([domain, int(ping_result)])
-                success_domains_table.add_row([domain, int(ping_result)])
+                tls_version = check_tls_version(domain)
+                table.add_row([domain, int(ping_result), tls_version])
+                success_domains_table.add_row([domain, int(ping_result), tls_version])
                 success_domains.add(domain)
                 success_count = len(success_domains)
             else:
-                table.add_row([domain, "Failed"])
+                table.add_row([domain, "Failed", "N/A"])
                 failed_count += 1
 
             pbar.set_description(f"Pinging: {domain}")
@@ -52,8 +65,12 @@ def ping_domains(domains):
     print("\nSuccessful Domains:")
     print(success_domains_table)
 
+    # Get the directory path of the script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
     # Save result to a text file
-    with open("ping_result.txt", 'w') as file:
+    output_file = os.path.join(script_dir, "ping_result.txt")
+    with open(output_file, "w") as file:
         file.write(str(table))
         file.write("\n\nSuccessful Domains:\n")
         file.write(str(success_domains_table))
