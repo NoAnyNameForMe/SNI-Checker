@@ -1,4 +1,4 @@
-[ورژن 1.2](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V.1.2)
+![TLS](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/69729e19-66e6-4601-a8fb-8901736ac0b2)[ورژن 1.2](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V.1.2)
 
 بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه.
 
@@ -58,8 +58,10 @@
 
 اول نتیجه همه رو نشون میده.
 
-![All](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/38273896-1187-422b-8f58-6d1a41472a47)
+![TLS0](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/cafd4308-8048-423e-95cc-53f197173da3)
+
 
 و تیبل دومی هم فقط اونایی که بهشون پینگ داشتید.
 
-![Final](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/8ebe2aaf-a16f-41fc-bbab-d619e05e5996)
+![TLS](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/4c07b5fd-5f15-41fd-a9ff-a7f8f7793eb7)
+
