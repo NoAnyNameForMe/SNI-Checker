@@ -1,9 +1,16 @@
-[ورژن 1.2](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V.1.2)
+[ورژن 1.3](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V1.3)
 
-بعد از اسکن یک فایل خروجی TXT بهتون میده از نتیچه.
+در فایل خروجی مربوط به دامنه های سالم که پینگ دارید، در قسمت Successful Domains، فقط دامنه هایی که TLSv1.3 بودند و پینگ داشتید نمایش داده میشه ( Domain Result.txt )
 
-توی این ورژن TLS Version، هر سایتی که بهش پینگ داشتید رو توی فایل خروجی و هم ترمینال نشون میده که قرار نباشه دستی همه سایت ها رو چک کنید.
+اضافه شدن Speed Test بعد از پروسه پیدا کردن دامنه سالم، از شما سوال میپرسه که اسپید تست را میخواهید انجام بدید یا خیر
 
+که با موافقت، از دامنه های سالمی که پینگ داشنید و TLSv1.3 داشتند اسپید تست گرفته میشه که سرعت دانلود و آپلود سرور شما به اون دامنه چقدر هستش و در فایل خروچی جداگانه سیو میشه و مقدار حجم دانلود و آپلود برای این پروسه هم آخر به شما نمایش میده.
+
+( فقط اینچا مواظب مصرف دانلود و آپلود باشید، هرچی تعداد دامنه های سالم بیشتر باشه مصرف شما هم به همون نسبت بالا خواهد بود.)
+
+( Speed Test Result.txt )
+<br />
+<br />
 <br />
 
 با تشکر از تمام دوستانی که زحمت کشیدند برای اینترنت آزاد.
@@ -24,6 +31,7 @@
 	pip install ping3
  	pip install prettytable
   	pip install tqdm
+   	pip install speedtest_cli
 
 <br />
 
@@ -58,10 +66,14 @@
 
 اول نتیجه همه رو نشون میده.
 
-![TLS0](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/cafd4308-8048-423e-95cc-53f197173da3)
+![domain result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/dbeccc69-aef7-4833-a074-ca4d63ba5687)
 
 
-و تیبل دومی هم فقط اونایی که بهشون پینگ داشتید.
 
-![TLS](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/4c07b5fd-5f15-41fd-a9ff-a7f8f7793eb7)
+اسپید تست
+
+![speed test result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/5c613d4c-84e8-4939-8167-e04ad8f94a6a)
+![speed test result 1](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/5c964dc7-28aa-4f76-80f7-b03fe7d331f8)
+
+
 
