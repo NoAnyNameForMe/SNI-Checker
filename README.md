@@ -29,6 +29,7 @@
 ## راه اندازی
 پیشناز هایی که باید نصب کنید
 ```bash
+pip install requests
 pip install ping3
 pip install prettytable
 pip install tqdm
