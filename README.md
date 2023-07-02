@@ -1,17 +1,5 @@
-[ورژن 1.3](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V1.3)
 
-در فایل خروجی مربوط به دامنه های سالم که پینگ دارید، در قسمت Successful Domains، فقط دامنه هایی که TLSv1.3 بودند و پینگ داشتید نمایش داده میشه ( Domain Result.txt )
-
-اضافه شدن Speed Test بعد از پروسه پیدا کردن دامنه سالم، از شما سوال میپرسه که اسپید تست را میخواهید انجام بدید یا خیر
-
-که با موافقت، از دامنه های سالمی که پینگ داشنید و TLSv1.3 داشتند اسپید تست گرفته میشه که سرعت دانلود و آپلود سرور شما به اون دامنه چقدر هستش و در فایل خروچی جداگانه سیو میشه و مقدار حجم دانلود و آپلود برای این پروسه هم آخر به شما نمایش میده.
-
-( فقط اینچا مواظب مصرف دانلود و آپلود باشید، هرچی تعداد دامنه های سالم بیشتر باشه مصرف شما هم به همون نسبت بالا خواهد بود.)
-
-( Speed Test Result.txt )
-<br />
-<br />
-<br />
+# SNI Checker
 
 با تشکر از تمام دوستانی که زحمت کشیدند برای اینترنت آزاد.
 
@@ -23,57 +11,63 @@
 
 من کاملا مبتدی هستنم، و قطعا این کد حرفه ای نیست و یکم کار راه انداز هستش. شرمنده
 
-<br />
 
+## [ورژن 1.3](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V1.3)
 
-پشنیازهایی قبل از اجرای کد که باید نصب کنید.
+- در فایل خروجی مربوط به دامنه های سالم که پینگ دارید، در قسمت Successful Domains، فقط دامنه هایی که TLSv1.3 بودند و پینگ داشتید نمایش داده میشه
 
-	pip install ping3
- 	pip install prettytable
-  	pip install tqdm
-   	pip install speedtest_cli
+فایل خروجی: Domain Result.txt
 
-<br />
+- اضافه شدن Speed Test بعد از پروسه پیدا کردن دامنه سالم، از شما سوال میپرسه که اسپید تست را میخواهید انجام بدید یا خیر
 
+که با موافقت، از دامنه های سالمی که پینگ داشنید و TLSv1.3 داشتند اسپید تست گرفته میشه که سرعت دانلود و آپلود سرور شما به اون دامنه چقدر هستش و در فایل خروچی جداگانه سیو میشه و مقدار حجم دانلود و آپلود برای این پروسه هم آخر به شما نمایش میده.
+
+( فقط اینچا مواظب مصرف دانلود و آپلود باشید، هرچی تعداد دامنه های سالم بیشتر باشه مصرف شما هم به همون نسبت بالا خواهد بود.)
+
+فایل خروجی: Speed Test Result.txt
+
+## راه اندازی
+پیشناز هایی که باید نصب کنید
+```bash
+pip install ping3
+pip install prettytable
+pip install tqdm
+pip install speedtest_cli
+```
 کافیه از داخل سایت bgp.tools، لیست مورد نظرتون رو به صورت یک جا کپی کنید، به عنوان مثال
-
-	A	DNS
-	37.59.0.8	www.dylemo.pl, dylemo.pl
-	37.59.0.18	www.kisland.com, kisland.com
-	37.59.0.116	stage.mozilla-hispano.org, foroestatico.mozilla-hispano.org ( 5 more...)
-	37.59.0.183	shinken.2le.net
- 	.
-	.
- 	.
-  	.
-
+```bash
+A	DNS
+37.59.0.8	www.dylemo.pl, dylemo.pl
+37.59.0.18	www.kisland.com, kisland.com
+37.59.0.116	stage.mozilla-hispano.org, foroestatico.mozilla-hispano.org ( 5 more...)
+37.59.0.183	shinken.2le.net
+.
+.
+.
+.
+```
 
 وقتی که کلا دیتا رو کپی کردید، داخل یک فایل txt سیو کنید.
 
 نمونه ای که من کپی کردم
 
-![Domains](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/65fd6fcf-5ad2-4968-be78-26a7e277a8d2)
+![246831248-65fd6fcf-5ad2-4968-be78-26a7e277a8d2](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/35e0af12-5a2e-49bd-a33c-d4c6f8eb2afc)
 
 بعد کد رو ران کنید، از شما مسیر فایل txt میپرسه که کامل وارد کنید. به عنوان مثال
 
-	C:\SNI\domains.txt
-
+```bash
+C:\SNI\domains.txt
+```
 بعد خود کد میاد دامنه ها رو جدا میکنه و اضافه هایی که مربوط به دامنه نمیشه رو حذف میکنه و شروع میکنه به پینگ گرفتن از دامنه ها.
 
-در نهایت دامنه هایی که پینگ داشتید رو به صورت یه تیبل با پینگ به شما نشون میده.
+## نتیجه
 
-نتیجه کار به این صورت خواهد بود که دو تا تیبل به شما نشون میده.
+مربوط به Domain Result.txt
 
-اول نتیجه همه رو نشون میده.
+![domain result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/0b83024c-e938-4362-b0f7-63068b52fa3c)
 
-![domain result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/dbeccc69-aef7-4833-a074-ca4d63ba5687)
+مربوط به اسپید تست Speed Test Result.txt
 
+![speed test result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/839cde27-74eb-42f2-b682-6783c9b0d148)
 
-
-اسپید تست
-
-![speed test result](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/5c613d4c-84e8-4939-8167-e04ad8f94a6a)
-![speed test result 1](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/5c964dc7-28aa-4f76-80f7-b03fe7d331f8)
-
-
-
+![speed test result 1](https://github.com/NoAnyNameForMe/SNI-Checker/assets/137012307/ca9a3ffc-37f1-4879-a51b-2a4b2087bc92)
