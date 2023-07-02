@@ -35,6 +35,10 @@ pip install tqdm
 pip install speedtest_cli
 ```
 کافیه از داخل سایت bgp.tools، لیست مورد نظرتون رو به صورت یک جا کپی کنید، به عنوان مثال
+
+آموزش استفاده از سایت bgp.tools
+
+https://telegra.ph/آموزش-یافتن-SNI-برای-استفاده-با-رئالیتی-05-11
 ```bash
 A	DNS
 37.59.0.8	www.dylemo.pl, dylemo.pl
