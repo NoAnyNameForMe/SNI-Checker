@@ -72,6 +72,9 @@ def ping_domains(domains: List[str]) -> List[str]:
     success_domains_table = PrettyTable()
     success_domains_table.field_names = ['Domain', 'Ping Result (ms)', 'TLS Version']
 
+    # Get the directory path of the script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
     success_domains = set()
     success_count = 0
     failed_count = 0
@@ -87,6 +90,12 @@ def ping_domains(domains: List[str]) -> List[str]:
                     success_domains_table.add_row([domain, int(ping_time), tls_version])
                     success_domains.add(domain)
                     success_count = len(success_domains)
+                    # Save the middle results to a text file
+                    output_file = os.path.join(script_dir, "Temp Domains Result.txt")
+                    with open(output_file, "w") as file:
+                        file.write(str(table))
+                        file.write("\n\nSuccessful Domains (TLSv1.3) until now:\n")
+                        file.write(str(success_domains_table))
                 else:
                     failed_count += 1
             else:
@@ -101,10 +110,10 @@ def ping_domains(domains: List[str]) -> List[str]:
     print("\nSuccessful Domains (TLSv1.3):")
     print(success_domains_table)
 
-    # Get the directory path of the script
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-
     # Save result to a text file
+    output_file = os.path.join(script_dir, "Temp Domains Result.txt")
+    if os.path.exists(output_file):
+        os.remove(output_file)
     output_file = os.path.join(script_dir, "Domains Result.txt")
     with open(output_file, "w") as file:
         file.write(str(table))
