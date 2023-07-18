@@ -75,7 +75,6 @@ pip install requests
 pip install ping3
 pip install prettytable
 pip install tqdm
-pip install speedtest_cli
 ```
 کافیه از داخل سایت bgp.tools، لیست مورد نظرتون رو به صورت یک جا کپی کنید، به عنوان مثال
 
