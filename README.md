@@ -13,7 +13,7 @@
 من کاملا مبتدی هستنم، و قطعا این کد حرفه ای نیست و یکم کار راه انداز هستش. شرمنده
 
 
-## [ورژن 1.4](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V1.3)
+## [ورژن 1.4](https://github.com/NoAnyNameForMe/SNI-Checker/releases/tag/V1.4)
 
 **
 
