@@ -69,12 +69,9 @@
 **
 
 ## راه اندازی
-پیشناز هایی که باید نصب کنید
+برای نصب پیش نیازهای داخل فایل requirements.txt ابتدا در ترمینال به مسیر پروژه بروید و دستور زیر را اجرا کنید:
 ```bash
-pip install requests
-pip install ping3
-pip install prettytable
-pip install tqdm
+pip install -r requirements.txt
 ```
 کافیه از داخل سایت bgp.tools، لیست مورد نظرتون رو به صورت یک جا کپی کنید، به عنوان مثال
 
